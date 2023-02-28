@@ -1,6 +1,11 @@
-# Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Table of Contents
+1. [Available Scripts](#available-scripts)
+2. [File Structure](#file-structure)
+3. [Pages and Components](#pages-components)
+4. [Styles](#styles)
+5. [License](#license)
 
 ## Available Scripts
 
@@ -39,32 +44,59 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## File Structure
+While the `Multi Level Accordion` does primarily rely on the standard file structure of a React.js project (anchored around the /pages directory), a few additions have been made. The following outlines the full structure of the `Multi Level Accordion`:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+├── node_modules
+├── public
+|   ├── favicon.ico
+|   ├── index.html
+|   ├── manifest.json
+|   ├── robots.txt
+|   ├── logo192.png
+|   └── logo512.png
+├── src
+|   ├── apis
+|   |   └── getCategories.api.js
+|   ├── assets
+|   |   ├── fonts
+|   |   ├── styles
+|   |   |   └── globals.css
+|   ├── components
+|   |   ├── Accordion
+|   |   |   ├── Accordion.component.js
+|   |   |   └── Accordion.test.js
+|   |   └── index.js
+|   ├── config
+|   |   └── variables.config.js
+|   ├── mock
+|   |   ├── apis
+|   |   |   └── categories.js
+|   |   ├── handlers.js
+|   |   └── server.js
+|   ├── pages
+|   |   ├── Home
+|   |   |   ├── Home.Page.js
+|   |   |   └── Home.test.js
+|   |   └── index.js
+|   ├── services
+|   |   └── http.service.js
+|   ├── index.js
+|   └── setupTests.js
+├── .gitignore
+├── jsconfig.js
+├── package.json
+├── package-lock.json
+└── README.md
+```
+## Pages & Components
+For components, there are two conventions in use: the `/pages` directory that index.js uses for rendering, and a custom directory components that contains a mix of React components used to build out the user interface.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Styles
+CSS styles are implemented in two ways in the `Multi Level Accordion`. Global styles (not page or component-specific styles) are implemented using React.js built-in CSS processing. These styles are located in the `src/asstes/styles` directory.
 
-### Code Splitting
+At the page and component-level, CSS styles are implemented using `SCSS Module`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+Copyright © 2023 Pouya-Shekari
