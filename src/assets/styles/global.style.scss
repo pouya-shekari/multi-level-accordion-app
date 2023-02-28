@@ -20,15 +20,11 @@
 
 *{
   box-sizing: border-box;
-  font-family: 'IRANSansXFaNum-Regular';
-}
-
-html{
-  font-size: 62.5%;
+  font-family: 'IRANSansXFaNum-Regular'!important;
 }
 
 body {
-  direction: ltr;
+  direction: rtl;
 }
 
 ul{
@@ -38,4 +34,8 @@ ul{
 a{
   text-decoration: none;
   color: white;
+}
+
+p{
+  padding: 1rem 1.25rem;
 }
