@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.rtl.min.css';
 import reportWebVitals from './reportWebVitals';
-import {Home} from "./pages";
+import {Home} from "pages/Home/Home.Page";
 import 'assets/styles/global.style.scss';
 import {ThemeProvider} from "react-bootstrap";
 
